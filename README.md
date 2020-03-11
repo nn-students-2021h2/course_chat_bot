@@ -1,24 +1,42 @@
-# Intel Python Course Telegram Bot
+# Course contents
 
-This is a repository for Telegram bot that will be developed during Intel Academic Program Python Course.
+## Dijksta
 
-## Set up Python environment
+## Disjoint sets
 
-1. Create virtual environment `python -m venv venv`
-2. Activate virtual environment and install requirements: 
+**Disjoint sets**: 
 
-    `venv\Scripts\activate` - on Linux
+    - Disjoint Arrays
+    - Disjoint Tree
+    - Disjoint Tree Ranked 
+    - Disjoint Tree Ranked and Path compression
+
+**Functions**:
+
+    - Create function
+    - Union function
+    - Find element function
+
+## Dynamic programming
+    - Coins
+    - Greed stone
+    - Max submatrix
     
-    `venv\Scripts\activate.bat` - on Windows
+## Searching algorithms
+    - Binary search
+    - Doubling search
+    - Linear search
     
-    `pip install -r requirements.txt`
+## Skip lists
+    - Skil lists
+    - Linked lists
+    - Doubly linked lists
 
-## Create your Telegram Bot
+## Sorting algorithms
+    - Bucket sort
+    - Insertion sort
+    - Selection sort
+    - Merge sort
 
-1. Follow official [Telegram instructions](https://core.telegram.org/bots#6-botfather) to create your bot and obtain token.
-2. Insert obtained token to `setup.py` `TOKEN` variable.
 
-## Run your bot
 
-1. Execute ``python chat_bot_template.py``
-2. Try your bot - find it in Telegram and press `/start`.
