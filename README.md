@@ -7,7 +7,7 @@ This is a repository for Telegram bot that will be developed during Intel Academ
 1. Create virtual environment `python -m venv venv`
 2. Activate virtual environment and install requirements: 
 
-    `venv\Scripts\activate` - on Linux
+    `venv\bin\activate` - on Linux
     
     `venv\Scripts\activate.bat` - on Windows
     

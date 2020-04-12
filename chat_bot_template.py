@@ -38,11 +38,23 @@ def error(update: Update, context: CallbackContext):
 
 
 def main():
-    bot = Bot(
-        token=TOKEN,
-        base_url=PROXY,  # delete it if connection via VPN
-    )
-    updater = Updater(bot=bot, use_context=True)
+    # bot = Bot(
+    #     token=TOKEN,
+    #     base_url=PROXY,  # delete it if connection via VPN
+    # )
+    # updater = Updater(bot=bot, use_context=True)
+
+    # Connect via socks proxy
+    REQUEST_KWARGS = {
+        'proxy_url': PROXY,
+        # Optional, if you need authentication:
+        # 'urllib3_proxy_kwargs': {
+        #     'username': 'name',
+        #     'password': 'passwd',
+        # }
+    }
+
+    updater = Updater(TOKEN, request_kwargs=REQUEST_KWARGS, use_context=True)
 
     # on different commands - answer in Telegram
     updater.dispatcher.add_handler(CommandHandler('start', start))
