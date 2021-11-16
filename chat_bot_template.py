@@ -46,7 +46,9 @@ def main():
 
     # Connect via socks proxy
     REQUEST_KWARGS = {
-        'proxy_url': PROXY,
+        #'proxy_url': PROXY,  # Uncomment this line if you encounter network issues/timeouts when starting the bot
+                              # Fill in the PROXY variable in setup.py with a proper proxy URL for this to work.
+
         # Optional, if you need authentication:
         # 'urllib3_proxy_kwargs': {
         #     'username': 'name',
